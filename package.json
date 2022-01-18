@@ -1,0 +1,18 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pablo <pablomurillo.sp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "test": "ava",
+    "build": "tsc ./src/index.ts",
+    "start": "node ./src/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.9",
+    "express": "^4.17.2",
+    "typescript": "^4.5.4"
+  }
+}
