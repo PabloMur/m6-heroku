@@ -15,10 +15,10 @@
   },
   "scripts": {
     "dev:front": "parcel serve ./src/index.html",
-    "dev": "nodemon --watch './index.ts' --exec 'ts-node ./dev.ts'",
-    "test": "ava",
-    "build": "tsc index.ts",
     "build:front": "parcel build ./src/index.html",
+    "dev": "nodemon --watch './index.ts' --exec 'ts-node ./dev.ts'",
+    "build": "tsc index.ts",
+    "test": "ava",
     "start": "node index.js"
   }
 }
