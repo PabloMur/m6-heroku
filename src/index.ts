@@ -6,11 +6,15 @@ const app = express();
 
 app.use(express.json());
 
-console.log(process.env.NODE_ENV);
-
 app.get("/env", (req, res) => {
   res.json({
     env: process.env.NODE_ENV,
+  });
+});
+
+app.get("/db-env", (req, res) => {
+  res.json({
+    "db-env": process.env.DB_HOST,
   });
 });
 
