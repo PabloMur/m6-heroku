@@ -523,7 +523,7 @@ function hmrAcceptRun(bundle, id) {
 fetch("/env").then((res)=>{
     return res.json();
 }).then((data)=>{
-    console.log(data);
+    document.querySelector(".root").textContent = JSON.stringify(data);
 });
 
 },{}]},["8wcER","h7u1C"], "h7u1C", "parcelRequire9d72")
