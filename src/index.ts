@@ -1,8 +1,8 @@
-//console.log("hola desde el Front");
+// console.log("hola desde el Front");
 fetch("/env")
   .then((res) => {
-    res.json();
+    return res.json();
   })
-  .then((d) => {
-    console.log(d);
+  .then((data) => {
+    console.log(data);
   });
