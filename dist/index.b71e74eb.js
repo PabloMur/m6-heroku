@@ -520,9 +520,11 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"h7u1C":[function(require,module,exports) {
 //console.log("hola desde el Front");
-fetch("/env").then((r)=>r.json()
-).then((d)=>console.log(d)
-);
+fetch("/env").then((res)=>{
+    res.json();
+}).then((d)=>{
+    console.log(d);
+});
 
 },{}]},["8wcER","h7u1C"], "h7u1C", "parcelRequire9d72")
 

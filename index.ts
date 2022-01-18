@@ -5,6 +5,7 @@ const port = process.env.PORT || 3200;
 const app = express();
 
 app.use(express.json());
+app.use(express.static("dist"));
 
 app.get("/env", (req, res) => {
   res.json({
@@ -23,8 +24,6 @@ app.get("/hola", (req, res) => {
     message: "Hola, soy Poli",
   });
 });
-
-app.use(express.static("dist"));
 
 app.listen(port, () => {
   console.log("iniciado en " + port);
